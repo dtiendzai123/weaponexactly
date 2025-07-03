@@ -62,7 +62,7 @@ const WeaponProfiles = {
   "SPAS12":      { recoilSmooth: 0.87, dragSensitivity: 1.6,  aimLockStrength: 0.8,  accuracyBoost: 1.25 },
   "MAG7":        { recoilSmooth: 0.88, dragSensitivity: 1.65, aimLockStrength: 0.85, accuracyBoost: 1.25 },
 
- "M1887":        { recoilSmooth: 0.88, dragSensitivity: 1.65, aimLockStrength: 0.85, accuracyBoost: 1.25 },
+ "M1887":        { recoilSmooth: 0.01, dragSensitivity: 2.0, aimLockStrength: 1.0, accuracyBoost: 2.0 },
 
   // Light Machine Guns (LMG)
   "M249":        { recoilSmooth: 0.9,  dragSensitivity: 1.7,  aimLockStrength: 1.0, accuracyBoost: 1.4 },
