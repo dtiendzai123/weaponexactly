@@ -59,37 +59,37 @@ class AdvancedKalmanFilter {
 
 // == Enhanced Weapon Profiles ==
 const WeaponProfiles = {
-  "AK47": { recoilSmooth: 0.98, dragSensitivity: 2.2, aimLockStrength: 1.3, accuracyBoost: 1.8, lockRadius: 0.08 },
-  "M4A1": { recoilSmooth: 0.99, dragSensitivity: 2.3, aimLockStrength: 1.4, accuracyBoost: 1.85, lockRadius: 0.09 },
-  "SCAR": { recoilSmooth: 0.97, dragSensitivity: 2.1, aimLockStrength: 1.35, accuracyBoost: 1.75, lockRadius: 0.08 },
-  "FAMAS": { recoilSmooth: 0.95, dragSensitivity: 2.0, aimLockStrength: 1.25, accuracyBoost: 1.7, lockRadius: 0.075 },
-  "GROZA": { recoilSmooth: 0.98, dragSensitivity: 1.9, aimLockStrength: 1.45, accuracyBoost: 1.9, lockRadius: 0.085 },
-  "AN94": { recoilSmooth: 0.96, dragSensitivity: 2.0, aimLockStrength: 1.3, accuracyBoost: 1.75, lockRadius: 0.08 },
-  "XM8": { recoilSmooth: 0.98, dragSensitivity: 1.95, aimLockStrength: 1.35, accuracyBoost: 1.8, lockRadius: 0.08 },
+  "AK47": { recoilSmooth: 0.98, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
+  "M4A1": { recoilSmooth: 0.99, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.85, lockRadius: 360.0 },
+  "SCAR": { recoilSmooth: 0.97, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.75, lockRadius: 360.0 },
+  "FAMAS": { recoilSmooth: 0.95, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 },
+  "GROZA": { recoilSmooth: 0.98, dragSensitivity: 4.9, aimLockStrength: 2.0, accuracyBoost: 1.9, lockRadius: 360.0 },
+  "AN94": { recoilSmooth: 0.96, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.75, lockRadius: 360.0 },
+  "XM8": { recoilSmooth: 0.98, dragSensitivity: 3.95, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
 
-  "MP40": { recoilSmooth: 0.92, dragSensitivity: 2.5, aimLockStrength: 1.2, accuracyBoost: 1.6, lockRadius: 0.1 },
-  "UMP": { recoilSmooth: 0.94, dragSensitivity: 2.4, aimLockStrength: 1.35, accuracyBoost: 2.2, lockRadius: 0.1 },
-  "P90": { recoilSmooth: 0.95, dragSensitivity: 2.3, aimLockStrength: 1.3, accuracyBoost: 1.7, lockRadius: 0.095 },
-  "MP5": { recoilSmooth: 0.96, dragSensitivity: 2.2, aimLockStrength: 1.35, accuracyBoost: 1.75, lockRadius: 0.09 },
-  "THOMPSON": { recoilSmooth: 0.93, dragSensitivity: 2.3, aimLockStrength: 1.3, accuracyBoost: 1.65, lockRadius: 0.1 },
+  "MP40": { recoilSmooth: 0.92, dragSensitivity: 3.5, aimLockStrength: 2.0, accuracyBoost: 1.6, lockRadius: 360.0 },
+  "UMP": { recoilSmooth: 0.94, dragSensitivity: 3.4, aimLockStrength: 2.0, accuracyBoost: 2.2, lockRadius:360.0 },
+  "P90": { recoilSmooth: 0.95, dragSensitivity: 3.3, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 },
+  "MP5": { recoilSmooth: 0.96, dragSensitivity: 3.2, aimLockStrength: 2.0, accuracyBoost: 1.75, lockRadius: 360.0 },
+  "THOMPSON": { recoilSmooth: 0.93, dragSensitivity: 3.3, aimLockStrength: 2.0, accuracyBoost: 1.65, lockRadius: 360.0 },
 
-  "AWM": { recoilSmooth: 0.995, dragSensitivity: 1.8, aimLockStrength: 1.8, accuracyBoost: 2.5, lockRadius: 0.06 },
-  "KAR98K": { recoilSmooth: 0.99, dragSensitivity: 1.75, aimLockStrength: 1.6, accuracyBoost: 2.2, lockRadius: 0.065 },
-  "M82B": { recoilSmooth: 0.995, dragSensitivity: 1.8, aimLockStrength: 1.7, accuracyBoost: 2.4, lockRadius: 0.06 },
+  "AWM": { recoilSmooth: 0.995, dragSensitivity: 3.8, aimLockStrength: 2.0, accuracyBoost: 2.5, lockRadius: 360.0 },
+  "KAR98K": { recoilSmooth: 0.99, dragSensitivity: 3.75, aimLockStrength: 2.0, accuracyBoost: 2.2, lockRadius: 360.0 },
+  "M82B": { recoilSmooth: 0.995, dragSensitivity: 3.8, aimLockStrength: 2.0, accuracyBoost: 2.4, lockRadius: 360.0 },
 
-  "M1014": { recoilSmooth: 0.88, dragSensitivity: 2.0, aimLockStrength: 1.1, accuracyBoost: 1.5, lockRadius: 0.12 },
-  "SPAS12": { recoilSmooth: 0.9, dragSensitivity: 2.0, aimLockStrength: 1.2, accuracyBoost: 1.6, lockRadius: 0.12 },
-  "MAG7": { recoilSmooth: 0.91, dragSensitivity: 2.1, aimLockStrength: 1.25, accuracyBoost: 1.65, lockRadius: 0.11 },
-  "M1887": { recoilSmooth: 0.85, dragSensitivity: 2.5, aimLockStrength: 1.5, accuracyBoost: 2.5, lockRadius: 0.15 },
+  "M1014": { recoilSmooth: 0.88, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.5, lockRadius: 360.0 },
+  "SPAS12": { recoilSmooth: 0.9, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.6, lockRadius: 360.0 },
+  "MAG7": { recoilSmooth: 0.91, dragSensitivity: 3.1, aimLockStrength: 2.0, accuracyBoost: 1.65, lockRadius: 360.0 },
+  "M1887": { recoilSmooth: 0.85, dragSensitivity: 4.5, aimLockStrength: 2.0, accuracyBoost: 2.5, lockRadius: 360.0 },
 
-  "M249": { recoilSmooth: 0.93, dragSensitivity: 2.0, aimLockStrength: 1.4, accuracyBoost: 1.8, lockRadius: 0.085 },
-  "GATLING": { recoilSmooth: 0.91, dragSensitivity: 2.1, aimLockStrength: 1.35, accuracyBoost: 1.7, lockRadius: 0.09 },
+  "M249": { recoilSmooth: 0.93, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
+  "GATLING": { recoilSmooth: 0.91, dragSensitivity: 3.1, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 },
 
-  "DESERT_EAGLE": { recoilSmooth: 0.97, dragSensitivity: 2.2, aimLockStrength: 1.5, accuracyBoost: 2.0, lockRadius: 0.08 },
-  "M500": { recoilSmooth: 0.93, dragSensitivity: 2.3, aimLockStrength: 1.4, accuracyBoost: 1.8, lockRadius: 0.08 },
-  "G18": { recoilSmooth: 0.91, dragSensitivity: 2.4, aimLockStrength: 1.3, accuracyBoost: 1.7, lockRadius: 0.09 },
+  "DESERT_EAGLE": { recoilSmooth: 0.97, dragSensitivity: 3.2, aimLockStrength: 2.0, accuracyBoost: 2.0, lockRadius: 360.0 },
+  "M500": { recoilSmooth: 0.93, dragSensitivity: 3.3, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
+  "G18": { recoilSmooth: 0.91, dragSensitivity: 3.4, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 },
 
-  "DEFAULT": { recoilSmooth: 0.94, dragSensitivity: 2.0, aimLockStrength: 1.3, accuracyBoost: 1.7, lockRadius: 0.08 }
+  "DEFAULT": { recoilSmooth: 0.94, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 }
 };
 
 // == Enhanced Dynamic Sensitivity with Prediction ==
@@ -101,13 +101,13 @@ function getAdvancedDragSensitivity(currentAim, targetPos, velocity, profile, ba
   const dz = currentAim.z - targetPos.z;
   const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
 
-  const maxRadius = profile.lockRadius || 0.08;
+  const maxRadius = profile.lockRadius || 360.0;
   const distanceFactor = Math.max(0.1, 1 - (dist / maxRadius));
 
   const velocityMagnitude = velocity.length();
   const velocityFactor = 1 + (velocityMagnitude * 0.5);
 
-  const weaponSensitivity = profile.dragSensitivity || 2.0;
+  const weaponSensitivity = profile.dragSensitivity || 3.0;
 
   return baseSensitivity * weaponSensitivity * distanceFactor * velocityFactor;
 }
@@ -132,10 +132,23 @@ class AimLockUltimate {
     this.lockHistory = [];
     this.currentAim = Vector3.zero();
 
-    this.predictionTime = 0.05;
+    this.predictionTime = 0.01;
     this.smoothingFactor = 0.15;
     this.lockConfidence = 0.0;
   }
+
+  // ✅ Hàm nằm ngoài constructor, đúng chuẩn
+  updateLockConfidence(enemy, player) {
+    let confidence = 0.0;
+
+    if (enemy.visible) confidence += 0.3;
+    if (enemy.inFov) confidence += 0.3;
+    if (enemy.headDetected) confidence += 0.3;
+    if (player.fpsStable) confidence += 0.1;
+
+    this.lockConfidence = Math.min(confidence, 1.0);
+  }
+}
 
   updateEnemyPosition(rawPos) {
     const now = Date.now();
@@ -259,7 +272,7 @@ function advancedTriggerLock(currentAim, targetPos, velocity, profile, baseThres
 
 const boneHeadPos = new Vector3(-0.0456970781, -0.004478302, -0.0200432576);
 const recoilOffset = new Vector3(0.0, 0.0, 0.0);
-const currentAim = new Vector3(0.55, 0.12, -0.02);
+const currentAim = new Vector3(-0.0456970781, -0.004478302, -0.0200432576);
 const weaponsToTest = ["M1887", "MP40", "M1014", "UMP"];
 
 function runInfiniteLoop() {
@@ -310,17 +323,18 @@ function switchWeapon(newWeapon) {
 function detectOptimalSettingsForDistance(weapon, gameMode = "normal", distanceKey) {
   const baseProfile = WeaponProfiles[weapon] || WeaponProfiles["DEFAULT"];
   const modeMultipliers = {
-    "normal": 1.0,
-    "ranked": 1.2,
-    "close_combat": 1.5,
-    "long_range": 0.8
-  };
-  const distanceMultipliers = {
-    close: 1.1,
-    medium: 1.0,
-    far: 0.9,
-    veryFar: 0.8
-  };
+  "normal": 1.2,           // Tăng nhẹ để mọi chế độ đều khoá mạnh hơn
+  "ranked": 1.5,           // Rank cần phản ứng nhanh & dính mục tiêu
+  "close_combat": 1.8,     // Tăng cực mạnh để phản xạ nhanh, auto-headlock
+  "long_range": 1.1        // Giữ ổn định, không giảm như trước
+};
+
+const distanceMultipliers = {
+  close: 1.4,              // Gần → phải cực nhanh và chính xác
+  medium: 1.2,             // Tăng nhẹ cho đa số tình huống bắn
+  far: 1.0,                // Không giảm, giữ nguyên sức mạnh
+  veryFar: 0.95            // Chỉ giảm rất nhẹ (ổn định mà vẫn mạnh)
+};
 
   const modeMultiplier = modeMultipliers[gameMode] || 1.0;
   const distanceMultiplier = distanceMultipliers[distanceKey] || 1.0;
