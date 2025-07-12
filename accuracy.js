@@ -150,7 +150,7 @@ class AimLockUltimate {
   }
 }
 
-  updateEnemyPosition(rawPos) {
+    updateEnemyPosition(rawPos) {
     const now = Date.now();
     const dt = Math.min((now - this.lastUpdate) / 1000, 0.1);
 
@@ -173,6 +173,8 @@ class AimLockUltimate {
 
     return filtered;
   }
+
+ 
 
   predictPosition(filteredPos) {
     const velocityPrediction = this.velocity.multiplyScalar(this.predictionTime);
