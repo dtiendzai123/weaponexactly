@@ -170,14 +170,14 @@ class AimLockUltimate {
 
   applyAdvancedRecoilCompensation(recoilOffset) {
     const smoothing = this.profile.recoilSmooth || 0.9;
-    const strength = this.profile.aimLockStrength || 1.0;
+    const strength = this.profile.aimLockStrength || 10.0;
     const compensated = recoilOffset.multiplyScalar(strength);
     this.recoilOffset = this.recoilOffset.multiplyScalar(smoothing).add(compensated.multiplyScalar(1 - smoothing));
   }
 
   calculateLockConfidence(currentAim, targetPos) {
     const distance = currentAim.subtract(targetPos).length();
-    const maxDistance = this.profile.lockRadius || 0.08;
+    const maxDistance = this.profile.lockRadius || 360.0;
     this.lockConfidence = Math.max(0, 1 - (distance / maxDistance));
     return this.lockConfidence;
   }
