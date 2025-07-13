@@ -59,8 +59,8 @@ class AdvancedKalmanFilter {
 
 // == Enhanced Weapon Profiles ==
 const WeaponProfiles = {
-  "AK47": { recoilSmooth: 0.98, dragSensitivity: 10.0, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
-  "M4A1": { recoilSmooth: 0.99, dragSensitivity: 10.0, aimLockStrength: 2.0, accuracyBoost: 1.85, lockRadius: 360.0 },
+  "AK47": { recoilSmooth: 0.98, dragSensitivity: 5.0, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
+  "M4A1": { recoilSmooth: 0.99, dragSensitivity: 5.0, aimLockStrength: 2.0, accuracyBoost: 1.85, lockRadius: 360.0 },
   "SCAR": { recoilSmooth: 0.97, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.75, lockRadius: 360.0 },
   "FAMAS": { recoilSmooth: 0.95, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 },
   "GROZA": { recoilSmooth: 0.98, dragSensitivity: 4.9, aimLockStrength: 2.0, accuracyBoost: 1.9, lockRadius: 360.0 },
@@ -74,16 +74,16 @@ const WeaponProfiles = {
   "AWM": { recoilSmooth: 0.995, dragSensitivity: 3.8, aimLockStrength: 2.0, accuracyBoost: 2.5, lockRadius: 360.0 },
   "KAR98K": { recoilSmooth: 0.99, dragSensitivity: 3.75, aimLockStrength: 2.0, accuracyBoost: 2.2, lockRadius: 360.0 },
   "M82B": { recoilSmooth: 0.995, dragSensitivity: 3.8, aimLockStrength: 2.0, accuracyBoost: 2.4, lockRadius: 360.0 },
-  "M1014": { recoilSmooth: 0.88, dragSensitivity: 10.0, aimLockStrength: 2.0, accuracyBoost: 1.5, lockRadius: 360.0 },
+  "M1014": { recoilSmooth: 0.88, dragSensitivity: 5.0, aimLockStrength: 2.0, accuracyBoost: 1.5, lockRadius: 360.0 },
   "SPAS12": { recoilSmooth: 0.9, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.6, lockRadius: 360.0 },
   "MAG7": { recoilSmooth: 0.91, dragSensitivity: 3.1, aimLockStrength: 2.0, accuracyBoost: 1.65, lockRadius: 360.0 },
-  "M1887": { recoilSmooth: 0.85, dragSensitivity: 10.0, aimLockStrength: 2.0, accuracyBoost: 2.5, lockRadius: 360.0 },
+  "M1887": { recoilSmooth: 0.85, dragSensitivity: 5.0, aimLockStrength: 2.0, accuracyBoost: 2.5, lockRadius: 360.0 },
   "M249": { recoilSmooth: 0.93, dragSensitivity: 3.0, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
   "GATLING": { recoilSmooth: 0.91, dragSensitivity: 3.1, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 },
   "DESERT_EAGLE": { recoilSmooth: 0.97, dragSensitivity: 3.2, aimLockStrength: 2.0, accuracyBoost: 2.0, lockRadius: 360.0 },
   "M500": { recoilSmooth: 0.93, dragSensitivity: 3.3, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
   "G18": { recoilSmooth: 0.91, dragSensitivity: 3.4, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 },
-  "DEFAULT": { recoilSmooth: 0.94, dragSensitivity: 10.0, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 }
+  "DEFAULT": { recoilSmooth: 0.94, dragSensitivity: 5.0, aimLockStrength: 2.0, accuracyBoost: 1.7, lockRadius: 360.0 }
 };
 
 // == Dynamic Sensitivity ==
