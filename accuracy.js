@@ -56,7 +56,10 @@ class AdvancedKalmanFilter {
     return this.x;
   }
 }
-
+const GamePackages = {
+  GamePackage1: "com.dts.freefireth",
+  GamePackage2: "com.dts.freefiremax"
+};
 // == Enhanced Weapon Profiles ==
 const WeaponProfiles = {
   "AK47": { recoilSmooth: 0.98, dragSensitivity: 5.0, aimLockStrength: 2.0, accuracyBoost: 1.8, lockRadius: 360.0 },
